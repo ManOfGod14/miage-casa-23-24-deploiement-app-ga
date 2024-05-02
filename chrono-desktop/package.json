@@ -1,0 +1,33 @@
+{
+  "name": "chrono-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "exec": "npx electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.example.chrono-desktop",
+    "productName": "TOP CHRONO - MIAGE CASA",
+    "directories": {
+      "output": "executable"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "chrono.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3"
+  }
+}

@@ -1,0 +1,20 @@
+"appId": "com.example.chrono-app" :
+    L'ID de l'application, une chaîne qui identifie de manière unique votre application.
+    Il est généralement sous la forme d'un domaine inversé, suivi du nom de l'application. 
+    Cet identifiant est utilisé pour différencier votre application des autres sur le système.
+
+"productName": "TOP CHRONO - MIAGE CASA" :
+    Le nom du produit. Il s'agit du nom qui sera affiché dans les messages d'installation et dans les programmes de désinstallation.
+
+"directories": { "output": "executable" } :
+    Configuration du répertoire de sortie. Ici, il est défini sur "executable", donc les fichiers générés par Electron Builder seront placés dans un dossier appelé "executable" à la racine de votre projet.
+
+"win": { "target": "nsis", "icon": "chrono.ico" } :
+    Configuration spécifique à Windows :
+        "target": "nsis" : Spécifie que l'installateur pour Windows sera créé en utilisant NSIS (Nullsoft Scriptable Install System), un système d'installation open-source.
+        "icon": "chrono.ico" : Spécifie l'icône de l'application pour Windows. Il doit être au format ICO.
+
+"nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true } :
+    Configuration spécifique à NSIS (installateur Windows) :
+        "oneClick": false : Spécifie si l'installateur doit être en mode "one-click". Lorsqu'il est défini sur false, l'installateur présente une interface utilisateur où l'utilisateur peut choisir les options d'installation.
+        "allowToChangeInstallationDirectory": true : Spécifie si l'utilisateur est autorisé à changer le répertoire d'installation lors de l'installation de l'application.
