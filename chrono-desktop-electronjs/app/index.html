@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOP CHRONO - MIAGE CASA</title>
+    <!-- les styles des icones bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css" />
+
+    <!-- les styles css bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- style personnalisé -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chrono">
+        <div class="card">
+          <div class="card-header">
+            <h1>
+              <i class="bi bi-hourglass-top"></i>
+              Top Chrono
+              <i class="bi bi-hourglass-split"></i>
+            </h1>
+          </div>
+
+          <div class="card-body">
+            <div class="temps">
+              <!-- <span id="tempId">00 : 00 : 00 : 00</span> -->
+              <span id="heuresId">00</span>
+              <span>:</span>
+              <span id="minutesId">00</span>
+              <span>:</span>
+              <span id="secondesId">00</span>
+              <span>:</span>
+              <span id="msecondesId">00</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button class="btn btn-outline-success" id="startId"><i class="bi bi-skip-start-fill"></i> Start</button>
+            <button class="btn btn-outline-warning" id="stopId"><i class="bi bi-stop-fill"></i> Stop</button>
+            <button class="btn btn-outline-danger" id="resetId"><i class="bi bi-arrow-clockwise"></i>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

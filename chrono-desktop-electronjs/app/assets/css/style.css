@@ -1,0 +1,29 @@
+body {
+  background-color: #1a1919;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.chrono {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  min-width: 500px;
+  transform: translate(-50%, -50%);
+}
+
+.temps {
+  margin: 0 20px 20px 20px;
+  font-size: 3.4em;
+  font-weight: 500;
+}
+
+button {
+  margin: 5px !important;
+  padding: 8px 20px !important;
+}
